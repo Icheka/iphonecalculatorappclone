@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Ozuru, Icheka Fortune">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="UTF-8">
+
+        <title>iPhone Calculator Web App</title>
+
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="mobile.css">
+        <link rel="stylesheet" href="desktop.css">
+
+        <style>
+            body {
+                background-color: black;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <h4 style="font-family: magneto; color: white; text-align: center;">Icheka</h4>
+            <div id="parent" class="col-12 border">
+                <div id="display" class="col-12">
+                    <div id="supRow"></div>
+                    <div id="display--area" class="col-8 col-sm-0"></div>
+                </div>
+                <div id="keys" class="col-12">
+                    <div class="keys__row" class="col-6 offset-3">
+                        <button class="bg-lightgrey text-black" type="button" onclick="reset()">AC</button>
+                        <button class="bg-lightgrey text-black" type="button" onclick="refresh()">LL</button>
+                        <button class="bg-lightgrey text-black" type="button" onclick="specChars('%')">%</button>
+                        <button class="bg-orange text-white" type="button" onclick="specChars('/')">/</button>
+                    </div>
+                    <div class="keys__row" class="col-6 offset-3">
+                        <button type="button" onclick="main(7)">7</button>
+                        <button type="button" onclick="main(8)">8</button>
+                        <button type="button" onclick="main(9)">9</button>
+                        <button class="bg-orange text-white" type="button" onclick="specChars('*')">X</button>
+                    </div>
+                    <div class="keys__row" class="col-6 offset-3 border">
+                        <button type="button" onclick="main(4)">4</button>
+                        <button type="button" onclick="main(5)">5</button>
+                        <button type="button" onclick="main(6)">6</button>
+                        <button class="bg-white text-orange" type="button" onclick="specChars('-')" style="font-weight: bold;">&dash;</button>
+                    </div>
+                    <div class="keys__row" class="col-6 offset-3">
+                        <button type="button" onclick="main(1)">1</button>
+                        <button type="button" onclick="main(2)">2</button>
+                        <button type="button" onclick="main(3)">3</button>
+                        <button class="bg-orange text-white" type="button" onclick="specChars('+')">+</button>
+                    </div>
+                    <div class="keys__row" class="col-6 offset-3">
+                        <button type="button" onclick="main(0)" style="width: 130px; border-radius: 40px;">0</button>
+                        <button type="button" onclick="specChars('.')">.</button>
+                        <button class="bg-orange text-white" type="button" onclick="solve()">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="app1.js"></script>
+    </body>
+</html>
